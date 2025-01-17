@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Grooming Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cutie Pie Grooming</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="appointment" onclick="window.location.href='tel:+16268728978'">Book Now</button>
+    </header>
+
+    <section id="home" class="hero section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="video/1.MP4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <div class="hero-titles">
+                <h1 class="main-title">Cutie Pie Grooming</h1>
+                <h2 class="sub-title">Professional Pet Grooming Services</h2>
+            </div>
+            <div class="hero-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Call Us</p>
+                    <h3>+1 (626) 872-8978</h3>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Opening Hours</p>
+                    <div class="opening-hours">
+                        <h3>Tuesday - Saturday</h3>
+                        <h4>9:00 AM - 5:00 PM</h4>
+                    </div>
+                </div>
+                <div class="info-item location-item" onclick="window.open('https://www.google.com.hk/maps/place/Cutie+Pie+Grooming+,+LLC/@35.5606961,-78.479519,16.5z/data=!4m15!1m8!3m7!1s0x89ac6580a4fc09e5:0xd8f072bb15ae24dc!2sCutie+Pie+Grooming+,+LLC!8m2!3d35.5601857!4d-78.4767484!10e1!16s%2Fg%2F11wv3_wdsk!3m5!1s0x89ac6580a4fc09e5:0xd8f072bb15ae24dc!8m2!3d35.5601857!4d-78.4767484!16s%2Fg%2F11wv3_wdsk?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Location</p>
+                        <h3>74 Union City Ct,<br>Clayton, NC 27520<br>United States</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="cta" onclick="window.location.href='tel:+16268728978'">Book Now</button>
+            <div class="social-links">
+                <a href="https://www.instagram.com/gphui3162?igsh=MnRjNDVkbnRpNTdp" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Full Groom Package</h3>
+                <p class="service-desc">Professional full grooming service includes:</p>
+                <ul class="service-list">
+                    <li>Bath & Haircut</li>
+                    <li>Professional Styling</li>
+                    <li>Nail Trimming</li>
+                    <li>Ear Cleaning</li>
+                    <li>Anal Gland Expression</li>
+                </ul>
+                <p class="service-note">Perfect for pets needing complete care</p>
+            </div>
+            <div class="service">
+                <h3>Bath Service</h3>
+                <p class="service-desc">Premium bath service includes:</p>
+                <ul class="service-list">
+                    <li>Professional Bathing</li>
+                    <li>Skin Care Treatment</li>
+                    <li>Blow-dry & Brushing</li>
+                    <li>Deodorizing</li>
+                    <li>Basic Cleaning</li>
+                </ul>
+                <p class="service-note">Ideal for regular maintenance</p>
+            </div>
+            <div class="service">
+                <h3>De-shedding Package</h3>
+                <p class="service-desc">Professional de-shedding includes:</p>
+                <ul class="service-list">
+                    <li>Special De-shedding Brushing</li>
+                    <li>Deep Massage</li>
+                    <li>Professional Shampoo</li>
+                    <li>Conditioner Treatment</li>
+                    <li>Follicle Care</li>
+                </ul>
+                <p class="service-note">Effectively reduces shedding</p>
+            </div>
+            <div class="service">
+                <h3>Walk In Services</h3>
+                <p class="service-desc">Quick services include:</p>
+                <ul class="service-list">
+                    <li>Nail Trimming</li>
+                    <li>Spot Cleaning</li>
+                    <li>Ear Cleaning</li>
+                    <li>Facial Trimming</li>
+                    <li>Quick Brush</li>
+                </ul>
+                <p class="service-note">No appointment needed</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2>About Us</h2>
+            <div class="about-container">
+                <div class="about-main">
+                    <div class="about-left">
+                        <div class="about-image">
+                            <img src="test/our team.jpeg" alt="Our Team">
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-text">
+                            <div class="about-story">
+                                <h3><i class="fas fa-heart"></i> Our Story</h3>
+                                <p>With over 15 years of professional experience in Los Angeles's vibrant pet grooming industry, we brought our expertise to Clayton in 2023. Our journey is built on a foundation of extensive experience, dedication to pet care, and countless happy furry clients from Beverly Hills to the San Fernando Valley.</p>
+                            </div>
+                            <div class="about-mission">
+                                <h3><i class="fas fa-star"></i> Our Mission</h3>
+                                <p>Drawing from our extensive Los Angeles experience, we're committed to bringing premium, West Coast-style pet grooming services to Clayton. We understand that each pet is unique, and we use our years of expertise to provide personalized care that ensures both comfort and style.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Certified Groomers</h4>
+                        <p>Professional team with years of experience</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Natural Products</h4>
+                        <p>Pet-safe, eco-friendly grooming supplies</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-paw"></i>
+                        <h4>Personalized Care</h4>
+                        <p>Customized service for each pet's needs</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-home"></i>
+                        <h4>Comfort First</h4>
+                        <p>Stress-free, loving environment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="client-info">
+                    <img src="client1.jpg" alt="Jennifer Williams">
+                    <div class="client-details">
+                        <h3>Jennifer Williams</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"I've been bringing my Goldendoodle to Cutie Pie Grooming for years in Beverly Hills. Their expertise with different coat types is unmatched, and they always know exactly how to style Bella's coat to keep her looking fabulous. The attention to detail and premium service keeps us coming back every time!"</p>
+                <p class="pet-name">- Bella, Goldendoodle</p>
+            </div>
+            
+            <div class="testimonial">
+                <div class="client-info">
+                    <img src="client2.jpg" alt="Robert Anderson">
+                    <div class="client-details">
+                        <h3>Robert Anderson</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"As someone who regularly shows dogs in competitions around Los Angeles, finding the right groomer is crucial. Cutie Pie Grooming's expertise with show dogs is exceptional - Winston's cuts are always perfect for the ring. Their professional handling and attention to breed standards is exactly what we need!"</p>
+                <p class="pet-name">- Winston, Shih Tzu</p>
+            </div>
+            
+            <div class="testimonial">
+                <div class="client-info">
+                    <img src="client3.jpg" alt="Maria Rodriguez">
+                    <div class="client-details">
+                        <h3>Maria Rodriguez</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Living in Studio City, I've tried many groomers, but Cutie Pie Grooming stands out for their gentle approach and expertise. My Yorkie used to be anxious about grooming, but their patient handling and professional care transformed her spa days into something she looks forward to. The results are always stunning!"</p>
+                <p class="pet-name">- Coco, Yorkshire Terrier</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+            <button class="gallery-nav prev-btn" onclick="changeGalleryPage('prev')">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="gallery-grid">
+                <!-- 第一组照片 -->
+                <div class="gallery-page active">
+                    <div class="gallery-item">
+                        <img src="photo/42a85895338aa115b81f684314c6d10.jpg" alt="Professional Grooming">
+                        <div class="gallery-overlay">
+                            <p>Professional Grooming</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/d07f3941bd0f33bfe0eea256de7ff12.jpg" alt="Spa Treatment">
+                        <div class="gallery-overlay">
+                            <p>Spa Treatment</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/72a1da17f91cd2b9b47a3b97c4704a9.jpg" alt="Hair Styling">
+                        <div class="gallery-overlay">
+                            <p>Hair Styling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/9fa2f3d1ecef66366356d2775f84b01.jpg" alt="Cat Grooming">
+                        <div class="gallery-overlay">
+                            <p>Cat Grooming</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/f734edea531d22827194ddbf84fdc54.jpg" alt="Nail Care">
+                        <div class="gallery-overlay">
+                            <p>Nail Care</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/f660aad3538e7eb08fc912fbfa35257.jpg" alt="Premium Care">
+                        <div class="gallery-overlay">
+                            <p>Premium Care</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二组照片 -->
+                <div class="gallery-page">
+                    <div class="gallery-item">
+                        <img src="photo/923949171794fe9b01df4e2ce484cfb.jpg" alt="Gentle Care">
+                        <div class="gallery-overlay">
+                            <p>Gentle Care</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/2e74765930ab5fd75a97199691b90ca.jpg" alt="Special Treatment">
+                        <div class="gallery-overlay">
+                            <p>Special Treatment</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/563bed1dd4bfdfbedf640f10be01589.jpg" alt="Deluxe Package">
+                        <div class="gallery-overlay">
+                            <p>Deluxe Package</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/42a85895338aa115b81f684314c6d10.jpg" alt="Elite Service">
+                        <div class="gallery-overlay">
+                            <p>Elite Service</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/7c2291907724bb589b186c7b1b32b3b.jpg" alt="Premium Plus">
+                        <div class="gallery-overlay">
+                            <p>Premium Plus</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/6d55716a1deed93e3458ab51c4f11cc.jpg" alt="Luxury Care">
+                        <div class="gallery-overlay">
+                            <p>Luxury Care</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第三组照片 -->
+                <div class="gallery-page">
+                    <div class="gallery-item">
+                        <img src="photo/cf2d019a8d150dd55baadd6d0236dac.jpg" alt="Expert Grooming">
+                        <div class="gallery-overlay">
+                            <p>Expert Grooming</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/7c2291907724bb589b186c7b1b32b3b.jpg" alt="Pet Pampering">
+                        <div class="gallery-overlay">
+                            <p>Pet Pampering</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/289c9110442ec53292dac05893cfb96.jpg" alt="Professional Care">
+                        <div class="gallery-overlay">
+                            <p>Professional Care</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/b53c2fb17c94960b30f423924850711.jpg" alt="Signature Service">
+                        <div class="gallery-overlay">
+                            <p>Signature Service</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/fbef1399a9acb8c6ca2f42ccaa7b4c9.jpg" alt="Royal Treatment">
+                        <div class="gallery-overlay">
+                            <p>Royal Treatment</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photo/16897dfd11b2a44d9cdd26f9b9b1718.jpg" alt="Ultimate Care">
+                        <div class="gallery-overlay">
+                            <p>Ultimate Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="gallery-nav next-btn" onclick="changeGalleryPage('next')">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="gallery-dots">
+            <span class="dot active" onclick="goToGalleryPage(0)"></span>
+            <span class="dot" onclick="goToGalleryPage(1)"></span>
+            <span class="dot" onclick="goToGalleryPage(2)"></span>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="section-content">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Vaccination Requirements</h3>
+                <p>For the safety of all our furry friends, we maintain strict vaccination policies:</p>
+                <ul class="faq-list">
+                    <li>Rabies vaccination is mandatory for all pets aged 5 months and older</li>
+                    <li>Puppies must have completed their second round of vaccinations with a 10-day waiting period</li>
+                    <li>We highly encourage complete vaccination coverage for optimal pet health and safety</li>
+                </ul>
+            </div>
+            <div class="faq-item">
+                <h3>No Show and Late Policy</h3>
+                <p>To maintain our high-quality service standards:</p>
+                <ul class="faq-list">
+                    <li>Please provide at least 2 hours notice for appointment cancellations</li>
+                    <li>If you're running more than 15 minutes late, contact your groomer immediately</li>
+                    <li>Late arrivals may require rescheduling to ensure quality service for all clients</li>
+                </ul>
+            </div>
+            <div class="faq-item">
+                <h3>Drop-off/Pick-up Times</h3>
+                <p>We're committed to efficient and flexible scheduling:</p>
+                <ul class="faq-list">
+                    <li>Standard grooming appointments typically take 1-3 hours</li>
+                    <li>Express grooming services available upon request at booking</li>
+                    <li>Extended stay accommodations can be arranged during check-in if needed</li>
+                    <li>Our priority is ensuring quality care while minimizing your pet's time away from home</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p class="address-link" onclick="window.open('https://www.google.com.hk/maps/place/Cutie+Pie+Grooming+,+LLC/@35.5606961,-78.479519,16.5z/data=!4m15!1m8!3m7!1s0x89ac6580a4fc09e5:0xd8f072bb15ae24dc!2sCutie+Pie+Grooming+,+LLC!8m2!3d35.5601857!4d-78.4767484!10e1!16s%2Fg%2F11wv3_wdsk!3m5!1s0x89ac6580a4fc09e5:0xd8f072bb15ae24dc!8m2!3d35.5601857!4d-78.4767484!16s%2Fg%2F11wv3_wdsk?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                        74 Union City Ct,<br>Clayton, NC 27520<br>United States
+                    </p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p class="phone-link" onclick="window.location.href='tel:+16268728978'">
+                        +1 (626) 872-8978
+                    </p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>cutiepiegrooming2025@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Cutie Pie Grooming</p>
+        <p>Business Hours: Tuesday - Saturday 9:00 AM - 5:00 PM</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        
+        fetch('send_email.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert('Thank you for your booking request. We will contact you shortly.');
+            if(data.status === 'success') {
+                window.location.reload();
+            }
+        })
+        .catch(error => {
+            alert('Booking request failed. Please try again later or contact us directly.');
+            console.error('Error:', error);
+        });
+    });
+    </script>
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+</body>
+</html> 
+</html> 
