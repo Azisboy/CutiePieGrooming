@@ -87,13 +87,27 @@ function initializeGallery() {
     const captionText = document.getElementById('modalCaption');
     const closeBtn = document.getElementsByClassName('modal-close')[0];
 
+    // 添加错误处理
+    if (!modal || !modalImg || !captionText || !closeBtn) {
+        console.log('Gallery elements not found, skipping gallery initialization');
+        return;
+    }
+
+    const galleryImages = document.querySelectorAll('.gallery-item img');
+    if (galleryImages.length === 0) {
+        console.log('No gallery images found, skipping gallery initialization');
+        return;
+    }
+
     // 为所有 gallery-item 中的图片添加点击事件
-    document.querySelectorAll('.gallery-item img').forEach(img => {
-        img.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.nextElementSibling.querySelector('p').innerHTML;
-            document.body.style.overflow = 'hidden';
+    galleryImages.forEach(img => {
+        if (img && img.nextElementSibling) {
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.nextElementSibling.querySelector('p').innerHTML;
+                document.body.style.overflow = 'hidden';
+            }
         }
     });
 

@@ -4,16 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Grooming Salon</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <!-- 导航栏内容 -->
+        <div class="logo">Cutie Pie Grooming</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="appointment" onclick="window.location.href='tel:+16268728978'">Book Now</button>
     </header>
 
     <section id="home" class="hero section active">
-        <!-- 首页内容 -->
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="./video/1.MP4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <div class="hero-titles">
+                <h1 class="main-title">Cutie Pie Grooming</h1>
+                <h2 class="sub-title">Professional Pet Grooming Services</h2>
+            </div>
+            <div class="hero-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Call Us</p>
+                    <h3>+1 (626) 872-8978</h3>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Opening Hours</p>
+                    <div class="opening-hours">
+                        <h3>Tuesday - Saturday</h3>
+                        <h4>9:00 AM - 5:00 PM</h4>
+                    </div>
+                </div>
+                <div class="info-item location-item" onclick="window.open('https://www.google.com.hk/maps/place/Cutie+Pie+Grooming+,+LLC/@35.5606961,-78.479519,16.5z/data=!4m15!1m8!3m7!1s0x89ac6580a4fc09e5:0xd8f072bb15ae24dc!2sCutie+Pie+Grooming+,+LLC!8m2!3d35.5601857!4d-78.4767484!10e1!16s%2Fg%2F11wv3_wdsk!3m5!1s0x89ac6580a4fc09e5:0xd8f072bb15ae24dc!8m2!3d35.5601857!4d-78.4767484!16s%2Fg%2F11wv3_wdsk?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Location</p>
+                    <h3>74 Union City Ct,<br>Clayton, NC 27520<br>United States</h3>
+                </div>
+            </div>
+            <button class="cta" onclick="window.location.href='tel:+16268728978'">Book Now</button>
+            <div class="social-links">
+                <a href="https://www.instagram.com/gphui3162?igsh=MnRjNDVkbnRpNTdp" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </section>
 
     <section id="services" class="section">
@@ -41,9 +87,16 @@
     </section>
 
     <footer>
-        <!-- 页脚内容 -->
+        <p>© 2024 Cutie Pie Grooming</p>
+        <p>Business Hours: Tuesday - Saturday 9:00 AM - 5:00 PM</p>
     </footer>
 
-    <script src="script.js"></script>
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html> 
