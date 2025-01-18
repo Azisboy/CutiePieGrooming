@@ -650,60 +650,41 @@ footer {
     text-align: center;
 }
 
-/* FAQ部分 */
-#faq {
-    padding: 0;
+/* FAQ部分的新样式 */
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 改为3列布局 */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .faq-item {
-    text-align: left;
-    margin: 30px 0;
-    padding: 35px;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    transition: transform 0.3s ease;
 }
 
 .faq-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
 
 .faq-item h3 {
     color: #4CAF50;
-    font-size: 1.4em;
-    margin-bottom: 20px;
-    padding-bottom: 12px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 2px solid rgba(76, 175, 80, 0.2);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.faq-item h3:before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
-
-.faq-item:nth-child(1) h3:before {
-    content: '\f48e';  /* 注射器图标 */
-}
-
-.faq-item:nth-child(2) h3:before {
-    content: '\f017';  /* 时钟图标 */
-}
-
-.faq-item:nth-child(3) h3:before {
-    content: '\f073';  /* 日历图标 */
 }
 
 .faq-item p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
     color: #444;
-    margin-bottom: 15px;
-    font-size: 1.1em;
-    line-height: 1.6;
-    font-weight: 500;
 }
 
 .faq-list {
@@ -714,11 +695,11 @@ footer {
 
 .faq-list li {
     position: relative;
-    padding-left: 28px;
-    margin-bottom: 15px;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    line-height: 1.4;
     color: #555;
-    line-height: 1.6;
-    font-size: 1em;
 }
 
 .faq-list li:before {
@@ -729,31 +710,31 @@ footer {
     position: absolute;
     left: 0;
     top: 2px;
-    font-size: 1.1em;
-}
-
-.faq-list li:last-child {
-    margin-bottom: 0;
+    font-size: 0.9em;
 }
 
 /* 响应式调整 */
+@media (max-width: 992px) {
+    .faq-container {
+        grid-template-columns: repeat(2, 1fr); /* 平板上改为2列 */
+    }
+}
+
 @media (max-width: 768px) {
+    .faq-container {
+        grid-template-columns: 1fr; /* 手机上改为1列 */
+    }
+    
     .faq-item {
-        padding: 25px;
-        margin: 20px 0;
+        padding: 15px;
     }
     
     .faq-item h3 {
-        font-size: 1.2em;
-    }
-    
-    .faq-item p {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
     .faq-list li {
-        font-size: 0.95em;
-        padding-left: 25px;
+        font-size: 0.85em;
     }
 }
 
