@@ -166,47 +166,39 @@ function goToGalleryPage(pageIndex) {
 
 // 初始化
 function init() {
-    // 获取所有section元素
+    // 添加错误检查
     const sections = document.querySelectorAll('.section');
-    
-    // 检查是否找到了sections
-    if (sections && sections.length > 0) {
-        // 确保所有section都隐藏
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-        
-        // 显示第一个section
-        sections[0].classList.add('active');
-        
-        // 创建导航点
-        createIndicators();
-        
-        // 添加滚轮事件监听
-        window.removeEventListener('wheel', handleWheel);
-        window.addEventListener('wheel', handleWheel, { passive: false });
-        
-        // 添加键盘事件支持
-        window.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowDown' && currentSection < sections.length - 1) {
-                scrollToSection(currentSection + 1);
-            } else if (e.key === 'ArrowUp' && currentSection > 0) {
-                scrollToSection(currentSection - 1);
-            }
-        });
-        
-        // 添加导航点击事件
-        handleNavClick();
-
-        // 添加预约按钮点击事件
-        const appointmentBtn = document.querySelector('.appointment');
-        const ctaBtn = document.querySelector('.cta');
-        if (appointmentBtn) appointmentBtn.addEventListener('click', handleBookingClick);
-        if (ctaBtn) ctaBtn.addEventListener('click', handleBookingClick);
-
-        // 初始化图片放大功能
-        initializeGallery();
+    if (!sections || sections.length === 0) {
+        console.log('No sections found');
+        return;
     }
+
+    // 确保第一个section是active
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+    sections[0].classList.add('active');
+
+    // 创建导航点
+    createIndicators();
+
+    // 添加滚轮事件监听
+    window.addEventListener('wheel', handleWheel, { passive: false });
+
+    // 添加键盘事件支持
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown' && currentSection < sections.length - 1) {
+            scrollToSection(currentSection + 1);
+        } else if (e.key === 'ArrowUp' && currentSection > 0) {
+            scrollToSection(currentSection - 1);
+        }
+    });
+
+    // 添加导航点击事件
+    handleNavClick();
+
+    // 初始化图片放大功能
+    initializeGallery();
 }
 
 // 确保在DOM完全加载后再初始化
